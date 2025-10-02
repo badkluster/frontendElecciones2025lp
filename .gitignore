@@ -1,0 +1,60 @@
+# --- Dependencias / Package managers ---
+node_modules/
+.pnp/
+.pnp.js
+.pnpm-store/
+
+# --- Builds / Bundles ---
+dist/
+build/
+out/
+.next/
+coverage/
+.nyc_output/
+.tmp/
+tmp/
+temp/
+
+# --- Plataformas ---
+.vercel/           # carpeta local del CLI de Vercel (mantener vercel.json)
+.netlify/          # carpeta local del CLI de Netlify
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Entornos ---
+.env
+.env.*
+!.env.example      # dejamos el ejemplo
+
+# --- Editores / SO ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-*
+
+# --- TypeScript / misc ---
+*.tsbuildinfo
+
+# --- Serverless / empaquetados ---
+.serverless/
+.functions/
+.lambda/
+
+# --- Dumps / datos locales (ajustá a gusto) ---
+scripts/*.xlsx
+scripts/*.csv
+dump*.json
+*.bak
+
+# --- Docker/local ---
+docker-data/
