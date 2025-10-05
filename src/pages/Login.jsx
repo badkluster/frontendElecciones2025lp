@@ -3,9 +3,11 @@ import { api } from "../services/api";
 import { useAuthStore } from "../store/auth";
 import { useNavigate } from "react-router-dom";
 
+// username = "crialp1ra";
+// password = "elecciones1ralp784";
 export default function Login() {
-  const [username, setUsername] = useState("crialp1ra");
-  const [password, setPassword] = useState("elecciones1ralp784");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const setAuth = useAuthStore((s) => s.setAuth);
